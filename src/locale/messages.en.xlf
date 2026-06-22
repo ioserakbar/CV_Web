@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="es" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="6792949945167720378" datatype="html">
+        <source>Ir a</source>
+        <target>Go to</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">17,18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1926157928707021468" datatype="html">
+        <source>Inicio</source>
+        <target>Start</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5373999042051591619" datatype="html">
+        <source>Habilidades</source>
+        <target>Skills</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">105</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5898814001174427098" datatype="html">
+        <source>Idiomas</source>
+        <target>Languages</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">123</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6247950905185402673" datatype="html">
+        <source>Educación</source>
+        <target>Education</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">135</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3839418929735297411" datatype="html">
+        <source>Experiencia</source>
+        <target>Experience</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">160</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7788084885686870749" datatype="html">
+        <source>Intereses personales</source>
+        <target>Personal interest</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">190</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1500181871307171807" datatype="html">
+        <source>Idioma</source>
+        <target>Language</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">35,36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7535527225967694107" datatype="html">
+        <source>Español</source>
+        <target>Spanish</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2383211077050532045" datatype="html">
+        <source>Inglés</source>
+        <target>English</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7467967706335052580" datatype="html">
+        <source>Descargar CV</source>
+        <target>Download CV</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">49,50</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">78,79</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2787976703677004560" datatype="html">
+        <source>En español</source>
+        <target>In spanish</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">56,57</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">84,85</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6363541252485073993" datatype="html">
+        <source>En inglés</source>
+        <target>In english</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">57,58</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">85,86</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8851671139683450751" datatype="html">
+        <source>Desarrollador Full-stack</source>
+        <target>Full-stack Developer</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">65,66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3909398260718721910" datatype="html">
+        <source>Linkedin</source>
+        <target>LinkedIn</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">68,69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="894911781624549965" datatype="html">
+        <source>Nuevo León, México</source>
+        <target>Nuevo León, México</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">69,70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6848310207064770188" datatype="html">
+        <source>Semilla Korok</source>
+        <target>Korok Seed</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">89</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7907726440673248941" datatype="html">
+        <source>Adrián Alejandro<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>Garza Garza</source>
+        <target>Adrian Alejandro<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>Garza Garza</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">97,98</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="565090407705487806" datatype="html">
+        <source> Soy un programador Full-Stack apasionado con las soluciones web eficientes. Disfruto de resolver problemas técnicos complejos y optimizar la solución al máximo. </source>
+        <target> I'm a Full-Stack developer passionate about efficient web solutions. I enjoy solving complex technical problems and optimizing the solution to the maximum. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">99</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8910211090138767887" datatype="html">
+        <source>* Por su preferencia a la reducción de movimiento, se han deshabilitado las animaciones.</source>
+        <target>* Due to your no motion preference, animations have been disabled.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">101,102</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1926648190569980111" datatype="html">
+        <source>Logo de <x id="INTERPOLATION" equiv-text="{{item.university}}"/></source>
+        <target><x id="INTERPOLATION" equiv-text="{{item.university}}"/> logo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">141,142</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8252526362190654659" datatype="html">
+        <source>Adrián Garza</source>
+        <target>Adrian Garza</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">211,212</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7987388837571654186" datatype="html">
+        <source>Teléfono:</source>
+        <target>Phone:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">213</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7022889194484821307" datatype="html">
+        <source>E-mail: </source>
+        <target>E-mail:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">215</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5329335338427334770" datatype="html">
+        <source>Actualizado en Mayo 2026</source>
+        <target>Updated in May 2026</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">217,218</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5353913819543856263" datatype="html">
+        <source>Adrián Garza - Programador Full-Stack</source>
+        <target>Adrian Garza - Fullstack Developer</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5803253433999761375" datatype="html">
+        <source>Habilidades suaves</source>
+        <target>Soft skills</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2585245891022622045" datatype="html">
+        <source>Aprendizaje autónomo</source>
+        <target>Self learning</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1573052573993664855" datatype="html">
+        <source>Resolución de problemas</source>
+        <target>Troubleshooting</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7109294375261339069" datatype="html">
+        <source>Pensamiento crítico</source>
+        <target>Critical thinking</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5901367180288174534" datatype="html">
+        <source>Trabajo en Equipo</source>
+        <target>Teamwork</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="103220111367852293" datatype="html">
+        <source>Frontend</source>
+        <target>Frontend</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1360286660327265296" datatype="html">
+        <source>Backend</source>
+        <target>Backend</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4450933459950547109" datatype="html">
+        <source>Bases de Datos</source>
+        <target>Data Bases</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7607104788059971606" datatype="html">
+        <source>DevOps</source>
+        <target>DevOps</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4785929021403739219" datatype="html">
+        <source>Automatización</source>
+        <target>Automation</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2889601918256567804" datatype="html">
+        <source>Workflows</source>
+        <target>Workflows</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4755276445131051081" datatype="html">
+        <source>Nativo</source>
+        <target>Native</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5752581761013226856" datatype="html">
+        <source>Avanzado</source>
+        <target>Advanced</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5646818187629210207" datatype="html">
+        <source>Universidad Humanista de las Américas</source>
+        <target>Universidad Humanista de las Américas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6934830544852006520" datatype="html">
+        <source>Licenciado en Paleontología</source>
+        <target>Bachelor of Science in Paleontology</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1678104313563794396" datatype="html">
+        <source>2024 - Hoy</source>
+        <target>2024 - Today</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2838694936620956757" datatype="html">
+        <source>Esto es un hobby, por lo que estudio solo los sabados en la mañana.</source>
+        <target>This is a hobby, I study on Saturday mornings.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5318515685662912040" datatype="html">
+        <source>UANL - Facultad de Ciencias Físico-Matemáticas</source>
+        <target>UANL - Faculty of Physical and Mathematical Sciences</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6275942714791362410" datatype="html">
+        <source>Licenciado en Multimedia y Animación Digital</source>
+        <target>Bachelor's Degree in Multimedia and Digital Animation</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="744558981763730922" datatype="html">
+        <source>2018 - 2022</source>
+        <target>2018 - 2022</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1423903328120106388" datatype="html">
+        <source>2024</source>
+        <target>2024</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6486603789737666053" datatype="html">
+        <source>
+            A pesar del nombre de la carrera, el 80% de lo que nos enseñaron fue programación de todo tipo, aquí aprendí a hacer entornos gráficos, manejo óptimo de bases de datos, 
+            diseño de aplicaciones móviles, creación de páginas web de todo tipo y sobre todo a ser autodidacta, una habilidad que me ha ayudado desde la carrera hasta en mi vida profesional.
+        </source>
+        <target>
+            Despite the name of the degree, 80% of what they taught us was software development of all types like 3d graphic environments, data base optimization and best practices, 
+            mobile applications, web development with various languages like C# or PHP and, above all, to be self-taught which has helped me in both university and professional tasks.
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">73,74</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3862356105941312058" datatype="html">
+        <source>Ingeniero de Software I</source>
+        <target>Software Engineer I</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7425209813378373987" datatype="html">
+        <source>Ellucian</source>
+        <target>Ellucian</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">81</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6831339368440195687" datatype="html">
+        <source>2023 - 2026</source>
+        <target>2023 - 2026</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1114225067676518907" datatype="html">
+        <source>
+            Desarrollador web en .NET y Angular de plataforma internacional administrativa para universidades. Manejo de llamadas API óptimos con datos de alta densidad, sistema de búsqueda y 
+            emparejamiento de posibles becas para estudiantes, implementación de páginas web de aviso financiero a estudiantes, personalizadas para cada universidad. 
+        </source>
+        <target>
+            Web developer using .NET and Angular for an international administrative platform for universities. Responsibilities included managing optimal API calls with high-density data, 
+            developing a search and matching system for potential student scholarships, and implementing customized financial aid web pages for each university.
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">83,84</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5509303528946050419" datatype="html">
+        <source>Practicante para Programación Web</source>
+        <target>Web Programming Intern</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">87</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2413698359458579926" datatype="html">
+        <source>2021 - 2022</source>
+        <target>2021 - 2022</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">89</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5447144226198813763" datatype="html">
+        <source>Creación de página web expositora de proyectos de la licenciatura de multimedia y animación digital seleccionados de los alumnos y mantenimiento de página web de la Facultad de Ciencias Físico Matemáticas. Ambas usando Laravel y MySQL.</source>
+        <target>Creation of a website showcasing selected multimedia and digital animation projects from students, and maintenance of the website for the Faculty of Physical and Mathematical Sciences. Both using Laravel and MySQL.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">90</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2003115089036551897" datatype="html">
+        <source>Paleontología</source>
+        <target>Paleontology</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">96</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8345774458917292582" datatype="html">
+        <source>Me apasionan los fósiles, ya sea de dinosaurios, artrópodos, plantas o bacterias; lo encuentro todo muy fascinante. Incluso estoy estudiándola actualmente como hobby.</source>
+        <target>I'm passionate about fossils, whether they're from dinosaurs, arthropods, plants, or bacteria; I find them all fascinating. I'm even currently studying them as a hobby.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">97</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5522407989371288372" datatype="html">
+        <source>Videojuegos</source>
+        <target>Videgames</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">100</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7782944830484207939" datatype="html">
+        <source>A sorpresa de nadie, soy fan de los videojuegos. Me gusta completarlos al 100%, como lo he hecho con Skyrim, Dark Souls, Subnautica, Mario Galaxy, entre otros; verdaderamente lo disfruto.</source>
+        <target>Unsurprisingly, I'm a video game fan. I like to complete them 100%, as I've done with Skyrim, Dark Souls, Subnautica, Mario Galaxy, and others; I truly enjoy it.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">101</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6350952114531179110" datatype="html">
+        <source>Arte</source>
+        <target>Art</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7469706679257786234" datatype="html">
+        <source>A veces dibujo ya sea sketches o dibujos completos y otras veces hago modelos 3D. Mayormente de fósiles reconstruidos o simplemente sketches de los fósiles preparados.</source>
+        <target>Sometimes I draw, either sketches or full drawings, and other times I make 3D models. I mostly do reconstructed fossils or simply sketches of prepared fossils.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">105</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6300281656024586018" datatype="html">
+        <source>¡Atrapa los 16 Koroks!</source>
+        <target>Catch all 16 Koroks!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2602479007569213049" datatype="html">
+        <source>Soy un programador Full-Stack apasionado con las soluciones web eficientes. Disfruto de resolver problemas técnicos complejos y optimizar la solución al máximo.</source>
+        <target>I'm a full-stack developer passionate about efficient web solutions. I enjoy solving complex technical problems and optimizing solutions to the fullest.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">121,122</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

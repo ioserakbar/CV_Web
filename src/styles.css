@@ -1,1 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+:root{
+    interpolate-size: allow-keywords;
+
+    --secondary-color: #8200b5;
+    --main-text-color: #333;
+
+    --background-color: whitesmoke;
+    --korok-shadow: drop-shadow(5px 5px 5px #222);
+
+    /*4s*/
+    --korok-start-animation: 4s;
+    --korok-spawn-delay: .1s;
+    --korok-spawn-duration: .5s;
+
+    --menu-animation-duration: .2s;
+    --menu-animation-type: cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+body{
+    font-family: "Stack Sans Headline", sans-serif;
+    color: var(--main-text-color);
+    overflow-x: hidden;
+    background-color: var(--background-color);
+    position: relative; 
+    padding: 0;
+    margin: 0;
+}
+
+button:focus-visible{
+    outline: none;
+}
