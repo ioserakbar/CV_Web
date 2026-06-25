@@ -441,9 +441,10 @@ footer{
     top: 0;
     margin:20px;
     right: 0;
-    z-index: 999;
     padding: 10px 20px;
+    z-index: 999;
     color: whitesmoke;
+    overflow: hidden;
     width: 70px;
 }
 
@@ -451,7 +452,7 @@ footer{
     display: none;
 }
 
-#navigation-menu:has(#menu-main:checked){
+#navigation-menu.open{
     width: 80%;
 }
 
@@ -459,10 +460,9 @@ footer{
         text-align: right;
     }
 
-        #navigation-menu .button label{
-            padding: 20px;
-            margin: 0;
-            font-size: 36px;
+        #navigation-menu .button button{
+            padding: 12px 18px;
+            font-size: 40px;
             background-color: transparent;
             color: inherit;
             border: none;
@@ -470,15 +470,13 @@ footer{
 
 #navigation-menu .content{
     height: 0;
+    box-sizing: border-box;
     overflow: hidden;
-}
-
-#navigation-menu:has(#menu-main:checked) .content{
-    height: auto;
+    box-sizing: border-box;
 }
 
     #navigation-menu .content .option{
-        margin-bottom: 15px;
+        margin: 0px;
     }
 
         #navigation-menu .content .title{
@@ -492,6 +490,8 @@ footer{
             box-sizing: border-box;
             color: inherit;
             width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
         }
 
         #navigation-menu .content .title:has(+ input:checked){
@@ -741,7 +741,7 @@ footer{
     }
 
     #navigation-menu .content{
-        transition: height var(--menu-animation-duration) var(--menu-animation-type);
+        transition: var(--menu-animation-duration) var(--menu-animation-type);
     }
 
     #navigation-menu .content ul{
@@ -749,7 +749,7 @@ footer{
     }
 
     #nav ul li.buttons .download-options-container{
-        transition: height var(--menu-animation-duration) var(--menu-animation-type);
+        transition: var(--menu-animation-duration) var(--menu-animation-type);
     }
 
     .korok-score{

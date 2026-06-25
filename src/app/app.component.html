@@ -16,60 +16,59 @@
         <p>Koroks restantes<br>{{korokLeft}}</p>
     </div>
 <div id="start" class="main-container" #start>
-    <div id ="navigation-menu" class="mobile-only">
+    <div id="navigation-menu" class="mobile-only {{isMobileMenuOpen ? 'open' : ''}}" #menuMain>
         <div class="button">
-            <label for="menu-main">
+            <button (click)="MobileMenuToggle()">
                 <fa-icon [icon]="faBars"></fa-icon>
-            </label>
-            <input type="checkbox" id="menu-main" #menuMain/>
+            </button>
         </div>
-        <div class="content">
-            <div class="option navigation">
-                <label class="title" for="menu-navigate">
-                    <fa-icon [icon] = "faArrowTurnDown"></fa-icon>
-                    <p i18n>Ir a</p>
-                    <div class="arrow">
-                        <fa-icon [icon] = "faCaretDown" class="arrow"></fa-icon>
-                    </div>
-                </label>
-                <input type="radio" id="menu-navigate"  name="mobile-menu" />
-                <ul class="acc-content"> 
-                    <li><button (click)="scrollToElement(start)" i18n>Inicio</button></li>
-                    <li><button (click)="scrollToElement(skills)" i18n>Habilidades</button></li>
-                    <li><button (click)="scrollToElement(languages)" i18n>Idiomas</button></li>
-                    <li><button (click)="scrollToElement(education)" i18n>Educación</button></li>
-                    <li><button (click)="scrollToElement(experience)" i18n>Experiencia</button></li>
-                    <li><button (click)="scrollToElement(interests)" i18n>Intereses personales</button></li>
-                </ul>
+        <div class="content" #menuContent>
+            <div>
+                <div class="option navigation">
+                    <button class="title"  (click)="MobileMenuContentToggle(GoToContent, options.GoTo)">
+                        <fa-icon [icon] = "faArrowTurnDown"></fa-icon>
+                        <p i18n>Ir a</p>
+                        <div class="arrow">
+                            <fa-icon [icon] = "faCaretDown" class="arrow"></fa-icon>
+                        </div>
+                    </button>
+                    <ul class="acc-content" #GoToContent> 
+                        <li><button (click)="scrollToElement(start)" i18n>Inicio</button></li>
+                        <li><button (click)="scrollToElement(skills)" i18n>Habilidades</button></li>
+                        <li><button (click)="scrollToElement(languages)" i18n>Idiomas</button></li>
+                        <li><button (click)="scrollToElement(education)" i18n>Educación</button></li>
+                        <li><button (click)="scrollToElement(experience)" i18n>Experiencia</button></li>
+                        <li><button (click)="scrollToElement(interests)" i18n>Intereses personales</button></li>
+                    </ul>
+                </div>
+                <div class="option">
+                    <button class="title" (click)="MobileMenuContentToggle(LangContent, options.Language)">
+                        <fa-icon [icon] = "faLanguage"></fa-icon>
+                        <p i18n>Idioma</p>
+                        <div class="arrow">
+                            <fa-icon [icon] = "faCaretDown" class="arrow"></fa-icon>
+                        </div>
+                    </button>
+                    <ul class="acc-content" #LangContent> 
+                        <li><button (click)="changeLanguage(lang.ES)" class="{{isButtonActive(lang.ES)}}" i18n>Español</button></li>
+                        <li><button (click)="changeLanguage(lang.EN)" class="{{isButtonActive(lang.EN)}}" i18n>Inglés</button></li>
+                    </ul>
+                </div>
+                <div class="option">
+                    <button class="title" (click)="MobileMenuContentToggle(DownloadContent, options.Download)">
+                        <fa-icon [icon] = "faDownload"></fa-icon>
+                        <p i18n>Descargar CV</p>
+                        <div class="arrow">
+                            <fa-icon [icon] = "faCaretDown" class="arrow"></fa-icon>
+                        </div>
+                    </button>
+                    <ul class="acc-content" #DownloadContent> 
+                        <li><a href="CV-AdriánGarza-Español.pdf" download i18n>En español</a></li>
+                        <li><a href="CV-AdrianGarza-English.pdf" download i18n>En inglés</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="option">
-                <label class="title" for="menu-language">
-                    <fa-icon [icon] = "faLanguage"></fa-icon>
-                    <p i18n>Idioma</p>
-                    <div class="arrow">
-                        <fa-icon [icon] = "faCaretDown" class="arrow"></fa-icon>
-                    </div>
-                </label>
-                <input type="radio" id="menu-language" name="mobile-menu" />
-                <ul class="acc-content"> 
-                    <li><button (click)="changeLanguage(lang.ES)" class="{{isButtonActive(lang.ES)}}" i18n>Español</button></li>
-                    <li><button (click)="changeLanguage(lang.EN)" class="{{isButtonActive(lang.EN)}}" i18n>Inglés</button></li>
-                </ul>
-            </div>
-            <div class="option">
-                <label class="title" for="menu-cv-mobile">
-                    <fa-icon [icon] = "faDownload"></fa-icon>
-                    <p i18n>Descargar CV</p>
-                    <div class="arrow">
-                        <fa-icon [icon] = "faCaretDown" class="arrow"></fa-icon>
-                    </div>
-                </label>
-                <input type="radio" id="menu-cv-mobile" name="mobile-menu" />
-                <ul class="acc-content"> 
-                    <li><a href="CV-AdriánGarza-Español.pdf" download i18n>En español</a></li>
-                    <li><a href="CV-AdrianGarza-English.pdf" download i18n>En inglés</a></li>
-                </ul>
-            </div>
+            
         </div>
     </div>
     <section id="nav" class="korok-spawn">
@@ -338,7 +337,7 @@
                 <li class="dot desktop-only"><fa-icon [icon]="faCircle"></fa-icon></li>
                 <li><label class="mobile-only-in" i18n>Teléfono:</label> +52 81 8684 0302</li>
                 <li class="dot desktop-only"><fa-icon [icon]="faCircle"></fa-icon></li>
-                <li><label class="mobile-only-in" i18n>E-mail: </label><a href="mailto:adriangg01@hotmail.com">adriangg01&#64;hotmail.com</a></li>
+                <li><label class="mobile-only-in" i18n>E-mail: </label><a href="mailto:adriangg01@hotmail.com"> adriangg01&#64;hotmail.com</a></li>
             </ul>
             <p i18n>Actualizado en Mayo 2026</p>
         </footer>

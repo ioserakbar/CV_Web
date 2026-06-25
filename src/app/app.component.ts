@@ -1,6 +1,7 @@
-import { Component, ElementRef, HostListener, ViewChild} from '@angular/core';
+import { Component, ElementRef, HostListener, inject, Inject, ViewChild} from '@angular/core';
 import { FormArray, FormControl, ReactiveFormsModule } from '@angular/forms';
 import { Title} from '@angular/platform-browser';
+import { Router } from '@angular/router';
 import { Ability } from '../data/ability';
 import { Education } from '../data/education';
 import { Experience } from '../data/experience';
@@ -8,6 +9,7 @@ import { Interest } from '../data/interest';
 import { confetti } from '@tsparticles/confetti';
 import { Language } from '../data/language';
 import { ELanguages } from '../data/enums/languages.enum';
+import { EMobileMenuOptions } from '../data/enums/mobileOptions.enum';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faCircle, faBars, faArrowTurnDown, faMap, faCaretDown, faLanguage, faDownload, faCaretUp} from '@fortawesome/free-solid-svg-icons';
 import { OnVisibleAnimation } from './directives/onVisibleAnimation.directive';
@@ -19,6 +21,8 @@ import { OnVisibleAnimation } from './directives/onVisibleAnimation.directive';
 })
 export class AppComponent {
 
+    router = inject(Router);
+
     faCircle = faCircle;
     faBars = faBars;
     faArrowTurnDown = faArrowTurnDown;
@@ -29,6 +33,7 @@ export class AppComponent {
     faCaretUp = faCaretUp;
 
     lang = ELanguages;
+    options = EMobileMenuOptions;
     displayLanguage:ELanguages = ELanguages.EN;
     isKorokSearchActive = false;
     korokSearchSring = $localize `¡Atrapa los 16 Koroks!`;
@@ -41,8 +46,17 @@ export class AppComponent {
     allKoroksFound = false;
 
     isSearchigForJob = true;
+    isMobileMenuOpen = false;
+    isGoToMenuOpen = false;
+    isLanguageMenuOpen = false;
+    isDownloadMenuOpen = false;
 
-    @ViewChild('menuMain') mobileMenuController!: ElementRef;
+
+
+    @ViewChild('menuContent') menuContent!: ElementRef;
+    @ViewChild('GoToContent') goToContent!: ElementRef;
+    @ViewChild('LangContent') langContent!: ElementRef;
+    @ViewChild('DownloadContent')downloadContent!: ElementRef;
     @ViewChild('start') start!: ElementRef;
 
     constructor(private titleService: Title){
@@ -54,14 +68,23 @@ export class AppComponent {
         for (let i = 0; i < korokNumber; i++) {
             this.korokControllerList.push(new FormControl(false))
         }
-        this.korokControllerList.valueChanges.subscribe((koroks) => {
+        this.korokControllerList.valueChanges.subscribe(() => {
             this.koroksFound++;
             this.korokLeft = this.totalKoroks - this.koroksFound;
             if(this.korokLeft == 0){
                 this.isKorokSearchActive = false;
                 this.korokSearchEnd()
             }
-        })
+        });
+
+        console.log(window.location.href)
+        var currentLanguage = window.location.href.split("/").at(-2)
+        if(currentLanguage == "es"){
+            this.displayLanguage = ELanguages.ES;
+        }
+        else{
+            this.displayLanguage = ELanguages.EN;
+        }
     }
 
     korokSearchEnd(){
@@ -181,16 +204,20 @@ export class AppComponent {
         )
     ]
 
- 
-    @HostListener('document:mousemove', ['$event'])
-    onMouseMovement(e: MouseEvent){
-        if(this.isKorokSearchActive){
-            //korok logic
-        }
-    }
-
     changeLanguage(language: ELanguages){
+
+        if(this.displayLanguage == language) return;
+        
         this.displayLanguage = language;
+        const currentPath = this.router.url; 
+
+        if(language == this.lang.ES){
+            window.location.href = `/es${currentPath}`;
+        }
+        else{
+            window.location.href = `/en${currentPath}`;
+        }
+
     }
 
     isButtonActive(button: ELanguages){
@@ -204,9 +231,99 @@ export class AppComponent {
         }
     }    
 
-    scrollToElement(element: any): void{
+    MobileMenuToggle(){
+        this.isMobileMenuOpen = !this.isMobileMenuOpen;
+
+        let mobileContentElement = this.menuContent.nativeElement;
+        
+        const sectionHeight = mobileContentElement.scrollHeight;
+        
+        if(this.isMobileMenuOpen){
+            mobileContentElement.style.height = sectionHeight + 'px';
+
+            mobileContentElement.addEventListener('transitionend', function clearHeight() {
+   
+                mobileContentElement.style.height = 'auto';
+                mobileContentElement.removeEventListener('transitionend', clearHeight);
+
+            }, { once: true });
+
+        }
+        else{
+            this.CloseAllMobieMenu();
+        }
+    }
+
+    CloseAllMobieMenu(){
+        this.CloseMobileMenuElement(this.menuContent.nativeElement);
+        
+        this.CloseMobileMenuElement(this.goToContent.nativeElement);
+        this.CloseMobileMenuElement(this.langContent.nativeElement);
+        this.CloseMobileMenuElement(this.downloadContent.nativeElement);
+
+        this.isGoToMenuOpen = false;
+        this.isLanguageMenuOpen = false;
+        this.isDownloadMenuOpen = false;
+    }
+
+    CloseMobileMenuElement(HTMLelement: any){
+        const sectionHeight = HTMLelement.scrollHeight;
+        HTMLelement.style.height = sectionHeight + 'px';
+        HTMLelement.offsetHeight;
+        HTMLelement.style.height = '0px';
+    }
+
+    MobileMenuContentToggle(HTMLelement: any, option: EMobileMenuOptions){
+        
+        let element = HTMLelement;
+        let isContentOpen = false;
+
+        switch(option){
+            case this.options.GoTo:
+            {
+                this.isGoToMenuOpen = !this.isGoToMenuOpen;
+                isContentOpen = this.isGoToMenuOpen;
+                break;
+            }
+            case this.options.Language:
+            {
+                this.isLanguageMenuOpen = !this.isLanguageMenuOpen;
+                isContentOpen = this.isLanguageMenuOpen;
+                break;
+            }
+            case this.options.Download:
+            {
+                this.isDownloadMenuOpen = !this.isDownloadMenuOpen;
+                isContentOpen = this.isDownloadMenuOpen;
+                break;
+            }
+                
+        }
+
+        const sectionHeight = element.scrollHeight;
+
+        if(isContentOpen){
+            element.style.height = sectionHeight + 'px';
+
+            element.addEventListener('transitionend', function clearHeight() {
+   
+                element.style.height = 'auto';
+                element.removeEventListener('transitionend', clearHeight);
+
+            }, { once: true });
+
+        }
+        else{
+            element.style.height = sectionHeight + 'px';
+            element.offsetHeight;
+            element.style.height = '0px';
+        }
+    }
+
+    scrollToElement(element: any){
         element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"})
-        this.mobileMenuController.nativeElement.checked = false;
+        this.isMobileMenuOpen= false;
+        this.CloseAllMobieMenu();
     }
 
 }
