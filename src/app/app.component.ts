@@ -1,4 +1,4 @@
-import { Component, ElementRef, HostListener, inject, Inject, ViewChild} from '@angular/core';
+import { afterRender, Component, ElementRef, inject, ViewChild} from '@angular/core';
 import { FormArray, FormControl, ReactiveFormsModule } from '@angular/forms';
 import { Title} from '@angular/platform-browser';
 import { Router } from '@angular/router';
@@ -61,6 +61,15 @@ export class AppComponent {
 
     constructor(private titleService: Title){
         this.titleService.setTitle($localize `Adrián Garza - Programador Full-Stack`);
+        afterRender(() => {
+            var currentLanguage = window.location.href.split("/").at(-2)
+            if(currentLanguage == "es"){
+                this.displayLanguage = ELanguages.ES;
+            }
+            else{
+                this.displayLanguage = ELanguages.EN;
+            }
+        });
     }
 
     ngOnInit(){
@@ -76,15 +85,6 @@ export class AppComponent {
                 this.korokSearchEnd()
             }
         });
-
-        console.log(window.location.href)
-        var currentLanguage = window.location.href.split("/").at(-2)
-        if(currentLanguage == "es"){
-            this.displayLanguage = ELanguages.ES;
-        }
-        else{
-            this.displayLanguage = ELanguages.EN;
-        }
     }
 
     korokSearchEnd(){
