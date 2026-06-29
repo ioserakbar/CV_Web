@@ -25,4 +25,5 @@ FROM nginx:latest
 ### Do note the project name, as 'ng build or npm run build'
 ### will create the directory structure like this
 ### /dist/your-project-name
-COPY --from=build /usr/src/app/dist/cv_web /usr/share/nginx/html
+COPY ./nginx.conf /etc/nginx/conf.d/default.conf
+COPY --from=build /usr/src/app/dist/cv-web /usr/share/nginx/html
