@@ -12,8 +12,7 @@
 # EXPOSE 80
 
 ### STAGE 1: Build ###
-FROM node:lts-alpine AS build
-WORKDIR /usr/src/app
+FROM node:latest AS build
 COPY package*.json ./
 RUN npm cache clean --force
 RUN npm ci
