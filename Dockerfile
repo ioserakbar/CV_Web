@@ -12,16 +12,16 @@
 # EXPOSE 80
 
 ### STAGE 1: Build ###
-FROM node:12.7-alpine AS build
+FROM node:lts-alpine AS build
 WORKDIR /usr/src/app
-COPY package.json package-lock.json ./
+COPY package*.json ./
 RUN npm cache clean --force
-RUN npm i
+RUN npm ci
 COPY . .
 RUN npm run build
 
 ### STAGE 2: Run ###
-FROM nginx:1.17.1-alpine
+FROM nginx:latest
 ### Do note the project name, as 'ng build or npm run build'
 ### will create the directory structure like this
 ### /dist/your-project-name
