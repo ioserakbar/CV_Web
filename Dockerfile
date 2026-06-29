@@ -18,7 +18,7 @@ COPY package*.json ./
 RUN npm cache clean --force
 RUN npm ci
 COPY . .
-RUN npm run build
+RUN npm run build --configuration=production
 
 ### STAGE 2: Run ###
 FROM nginx:latest
